@@ -1,4 +1,4 @@
-# Portfolio Automated Tests
+Portfolio - Automated Tests
 
 Getting Started!
 	
