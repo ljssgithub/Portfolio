@@ -1,6 +1,6 @@
 # Portfolio Automated Tests
 
-# Getting Started!
+Getting Started!
 	
 Prerequisites
 	To run this project you will need to have a basic environment with Python3, Robot Framework, Selenium, Appium library and a Browserstack account.
