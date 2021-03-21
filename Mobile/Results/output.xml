@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210321 15:46:18.515" rpa="false" schemaversion="2">
+<suite id="s1" name="LoginTestsMobile" source="C:\Portfolio\mobile\tests\LoginTestsMobile.robot">
+<kw name="Set Library Search Order" library="BuiltIn" type="SETUP">
+<arg>SeleniumLibrary</arg>
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<status status="PASS" starttime="20210321 15:46:18.904" endtime="20210321 15:46:18.904"/>
+</kw>
+<test id="s1-t1" name="Login not authorized">
+<kw name="Begin Mobile Test" library="Common" type="SETUP">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_capabilities}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20210321 15:46:18.905" level="INFO">${desired_capabilities} = {}</msg>
+<status status="PASS" starttime="20210321 15:46:18.905" endtime="20210321 15:46:18.905"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_capabilities}</arg>
+<arg>os_version</arg>
+<arg>9.0</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20210321 15:46:18.905" endtime="20210321 15:46:18.906"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_capabilities}</arg>
+<arg>device</arg>
+<arg>Google Pixel 3 XL</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20210321 15:46:18.906" endtime="20210321 15:46:18.906"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_capabilities}</arg>
+<arg>app</arg>
+<arg>bs://bb1f78b600e830db7b321d5bc78dbd7d3cb5d53b</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20210321 15:46:18.906" endtime="20210321 15:46:18.906"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_capabilities}</arg>
+<arg>browserstack.appium_version</arg>
+<arg>1.9.1</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20210321 15:46:18.906" endtime="20210321 15:46:18.906"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_capabilities}</arg>
+<arg>automationName</arg>
+<arg>Appium</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20210321 15:46:18.907" endtime="20210321 15:46:18.907"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${executor}</var>
+<arg>str('https://lucas793:fc51BgPYAVQaznMJs8nL@hub-cloud.browserstack.com/wd/hub')</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20210321 15:46:18.907" level="INFO">${executor} = https://lucas793:fc51BgPYAVQaznMJs8nL@hub-cloud.browserstack.com/wd/hub</msg>
+<status status="PASS" starttime="20210321 15:46:18.907" endtime="20210321 15:46:18.907"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Remote</arg>
+<arg>desired_capabilities=${desired_capabilities}</arg>
+<arg>command_executor=${executor}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20210321 15:46:18.908" level="INFO">Creating an instance of the Remote WebDriver.</msg>
+<status status="PASS" starttime="20210321 15:46:18.907" endtime="20210321 15:47:19.024"/>
+</kw>
+<status status="PASS" starttime="20210321 15:46:18.905" endtime="20210321 15:47:19.024"/>
+</kw>
+<kw name="Given User types &quot;Lucas&quot; in email" library="LoginPageMobile" sourcename="User types &quot;${email1}&quot; in email">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>${email1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210321 15:47:19.026" level="INFO">Typing text 'Lucas' into text field '//android.widget.EditText[@content-desc="Username"]'.</msg>
+<status status="PASS" starttime="20210321 15:47:19.025" endtime="20210321 15:47:27.482"/>
+</kw>
+<status status="PASS" starttime="20210321 15:47:19.025" endtime="20210321 15:47:27.482"/>
+</kw>
+<kw name="When User types &quot;123&quot; in password" library="LoginPageMobile" sourcename="User types &quot;${password1}&quot; in password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>${password1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210321 15:47:27.483" level="INFO">Typing text '123' into text field '//android.widget.EditText[@content-desc="Password"]'.</msg>
+<status status="PASS" starttime="20210321 15:47:27.483" endtime="20210321 15:47:36.226"/>
+</kw>
+<status status="PASS" starttime="20210321 15:47:27.483" endtime="20210321 15:47:36.226"/>
+</kw>
+<kw name="And User clicks on Login" library="LoginPageMobile">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210321 15:47:36.228" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Log In"]'.</msg>
+<status status="PASS" starttime="20210321 15:47:36.227" endtime="20210321 15:47:38.133"/>
+</kw>
+<status status="PASS" starttime="20210321 15:47:36.227" endtime="20210321 15:47:38.133"/>
+</kw>
+<kw name="Then System should show an alert &quot;Error&quot;" library="LoginPageMobile">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATOR_MESSAGE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210321 15:47:38.134" endtime="20210321 15:47:40.476"/>
+</kw>
+<status status="PASS" starttime="20210321 15:47:38.134" endtime="20210321 15:47:40.476"/>
+</kw>
+<kw name="End Mobile Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210321 15:47:40.477" endtime="20210321 15:47:41.937"/>
+</kw>
+<status status="PASS" starttime="20210321 15:47:40.477" endtime="20210321 15:47:41.937"/>
+</kw>
+<tag>SmokeTest</tag>
+<status status="PASS" starttime="20210321 15:46:18.904" endtime="20210321 15:47:41.937"/>
+</test>
+<doc>Feature: Login Mobile</doc>
+<status status="PASS" starttime="20210321 15:46:18.516" endtime="20210321 15:47:41.938"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SmokeTest</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTestsMobile">LoginTestsMobile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -8,8 +8,7 @@ ${LOGIN}               id=com.twitter.android:id/primary_action
 ${EMAIL}               //android.widget.EditText[@content-desc="Username"]
 ${PASSWORD}            //android.widget.EditText[@content-desc="Password"]
 ${Button_LOGIN}        //android.view.ViewGroup[@content-desc="Log In"]
-${LOCATOR_MESSAGE}     /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView
-${ALERT_MESSAGE}       Can't Find Account
+${LOCATOR_MESSAGE}     id=android:id/content
 
 
 *** Keywords ***
@@ -26,4 +25,6 @@ User clicks on Login
     Click Element    ${Button_LOGIN}
 
 Then System should show an alert "Error"
-    Element Text Should Be   ${LOCATOR_MESSAGE}   ${ALERT_MESSAGE}
+    Wait Until Element Is Visible  ${LOCATOR_MESSAGE}
+    
+    

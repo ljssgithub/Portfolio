@@ -16,6 +16,6 @@ Begin Mobile Test
     Create Webdriver    Remote      desired_capabilities=${desired_capabilities}    command_executor=${executor}
 
 End Mobile Test
-    Quit Application
+    Close Browser 
 
 
