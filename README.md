@@ -1,4 +1,5 @@
-Portfolio - Automated Tests
+Portfolio 
+The goal of this project is to show how to automate web, api and mobile testing using robot framework + browserstack + bdd.
 
 Getting Started!
 	
