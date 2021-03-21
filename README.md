@@ -1,16 +1,17 @@
-# Portfolio Automated Tests
+Portfolio - Automated Tests
 
-Getting Started
+Getting Started!
 	
 Prerequisites
 
 	To run this project you will need to have a basic environment with Python3, Robot Framework, Selenium, Appium library and a Browserstack account.
 	
-Installing 
+Installing
 
-	Cloning the repository	
-	Go to C:\Portfolio\Mobile\Resources\Common.robot and at line 15 add after https://"username":"AccessKey" 	
-	Go to C:\Portfolio\WEB\Resources\Common.robot and at line 6 and 7 add your username and AccessKey from Browsersatck.
+	Cloning the repository
+	You have to upload the apk from facebook in browserstack to get the bscode.
+	Go to C:\Portfolio\Mobile\Resources\Common.robot and at line 15 add after https://"username":"AccessKey" , add the bscode as well.	
+	Go to C:\Portfolio\WEB\Resources\Common.robot and at line 6 and 7 add your username, accessKey and bscode from Browsersatck.
 	
 
 How to run the tests
