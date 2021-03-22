@@ -18,7 +18,8 @@ Installing
 
 How to run the tests
 
-	To run mobile tests go to C:\Portfolio\Mobile\Tests\LoginTestsMobile.robot open up a terminal and type: robot LoginTestsMobile.robot
-	To run web tests go to C:\Portfolio\Web\Tests\LoginTests.robot open up a terminal and type: robot LoginTests.robot
-	Go to browserstack to see a video of the test execution. In Results folder you can see a report.
+	To run mobile tests go to C:\Portfolio\Mobile\Tests open up a terminal and type: robot LoginTestsMobile.robot
+	To run web tests go to C:\Portfolio\Web\Tests open up a terminal and type: robot LoginTests.robot
+	To run web tests go to C:\Portfolio\API\Tests open up a terminal and type: robot APITesting.robot
+	Go to browserstack to see a video of the test execution(WEB, API). In Results folder you can see a report.
 	
