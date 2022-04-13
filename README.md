@@ -2,7 +2,7 @@ Portfolio
 	
 	The goal of this project is to show how to automate web, api and mobile testing using robot framework + browserstack + bdd.
 	
-Demo Mobile Test - BrowserStack
+Demo Mobile Test - BrowserStack (Device Farm)
 
 ![bstack](https://user-images.githubusercontent.com/80653128/163276811-28a76996-f563-43c6-9019-fcec78b30f09.gif)
 
